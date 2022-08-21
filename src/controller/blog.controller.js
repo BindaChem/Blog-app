@@ -10,8 +10,8 @@ export const createBlog = (req, res) => {
       [id, data.title,data.img_url,data.description],
       (err) => {
         console.log(err);
-        if (err) return res.status (400).send({message: "Unable to do attendance"});
-        return res.status(200).send({ message: "attendance done" });
+        if (err) return res.status (400).send({message: "Unable to create blog "});
+        return res.status(200).send({ message: "Blog done" });
       }
     );
   };

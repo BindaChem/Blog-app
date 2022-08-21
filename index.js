@@ -10,7 +10,7 @@ app.use(express.json());
 app.use('/blogs',validateBlog,blogsRouter);
 
 app.listen(3301, () => {
-    console.log("server is started on port 3031");
+    console.log("server is started on port 3301");
 
 });
 
