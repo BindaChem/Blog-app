@@ -1,13 +1,12 @@
 import express from "express";
 //import {con} from "./src/config/database.js";
-import {router as blogsRouter} from "./src/routes/blogs.routes.js";
-import {validateBlog} from "./src/middleware/blogs.middleware.js";
+import {router as postRouter} from "./src/routes/post.routes.js";
 
 
 const app = express()//
 
 app.use(express.json());
-app.use('/blogs',validateBlog,blogsRouter);
+app.use('/post',postRouter);
 
 app.listen(3301, () => {
     console.log("server is started on port 3301");
